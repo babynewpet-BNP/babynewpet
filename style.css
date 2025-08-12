@@ -1,108 +1,92 @@
-/* style.css */
-
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap');
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdf5e6; /* cream background */
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
     color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 header {
-    background-color: #ffcc66; /* gold theme */
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #ffcc70;
+    padding: 20px;
 }
 
-.logo {
-    max-width: 80px;
+header h1 {
+    margin: 0;
 }
 
-.tagline {
-    font-style: italic;
-    color: #555;
+nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
 }
 
 .hero {
-    text-align: center;
-    padding: 40px 0;
+    padding: 50px 20px;
 }
 
-.hero-image {
-    max-width: 250px;
-    margin-bottom: 20px;
-}
-
-.hero-text {
-    font-size: 1.2rem;
-    color: #444;
-}
-
-.about, .roadmap, .tokenomics, .social {
-    padding: 40px 0;
-    text-align: center;
-}
-
-h2 {
-    color: #d4a017;
-    margin-bottom: 20px;
-}
-
-.roadmap ul {
-    list-style: none;
-    text-align: left;
-    display: inline-block;
-}
-
-.roadmap ul li {
+.hero h1 {
+    color: #FFD700; /* Warna emas */
+    font-size: 3em; /* Ukuran besar */
     margin-bottom: 10px;
-    padding-left: 15px;
-    position: relative;
 }
 
-.roadmap ul li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #d4a017;
+/* Animasi Fade-In */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.tokenomics-box {
-    background: #fff8dc;
-    padding: 20px;
-    border-radius: 10px;
+.hero h1, 
+.hero p, 
+.buy-btn {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero p {
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.buy-btn {
+    animation-delay: 0.6s;
+    animation-fill-mode: both;
+}
+
+.buy-btn {
     display: inline-block;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: gold;
+    color: #222;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.social-links img {
-    width: 50px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
+.buy-btn:hover {
+    background-color: #f0c300;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
+section {
+    padding: 30px 20px;
 }
 
 footer {
-    background-color: #ffcc66;
-    padding: 10px 0;
-    text-align: center;
-    color: #333;
-    font-size: 0.9rem;
-    margin-top: 20px;
+    background-color: #ffcc70;
+    padding: 10px;
+    margin-top: 30px;
 }
