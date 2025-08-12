@@ -1,0 +1,108 @@
+/* style.css */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf5e6; /* cream background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffcc66; /* gold theme */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    max-width: 80px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #555;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero-image {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.about, .roadmap, .tokenomics, .social {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #d4a017;
+    margin-bottom: 20px;
+}
+
+.roadmap ul {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+}
+
+.roadmap ul li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.roadmap ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #d4a017;
+}
+
+.tokenomics-box {
+    background: #fff8dc;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.social-links img {
+    width: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #ffcc66;
+    padding: 10px 0;
+    text-align: center;
+    color: #333;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
